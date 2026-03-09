@@ -1,18 +1,35 @@
+import Image from 'next/image';
+
 export default function Hero() {
   return (
     <section className="relative bg-gradient-to-br from-[#F9C7D4] to-white py-20 px-4">
       <div className="max-w-7xl mx-auto">
-        <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-bold text-[#1A5C5C] mb-6">
-            Dr. Shradha Vohra
-          </h1>
-          <p className="text-lg text-gray-500 mb-4">M.B.B.S, M.S. (Obstetrics &amp; Gynaecology), FMAS, DMAS, FIH</p>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-8">
-            Dedicated to providing high-quality women&apos;s healthcare, specializing in obstetrics
-            and gynaecology. Passionate about managing high-risk pregnancies, minimally invasive
-            surgery, and enhancing patient outcomes through compassionate care.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+        <div className="flex flex-col md:flex-row items-center gap-12 mb-12">
+          {/* Profile Photo */}
+          <div className="flex-shrink-0">
+            <div className="w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-[#1A5C5C] shadow-xl">
+              <Image
+                src="/profile-photo.jpg"
+                alt="Dr. Shradha Vohra"
+                width={320}
+                height={320}
+                className="object-cover w-full h-full"
+              />
+            </div>
+          </div>
+
+          {/* Text Content */}
+          <div className="text-center md:text-left">
+            <h1 className="text-5xl md:text-6xl font-bold text-[#1A5C5C] mb-6">
+              Dr. Shradha Vohra
+            </h1>
+            <p className="text-lg text-gray-500 mb-4">M.B.B.S, M.S. (Obstetrics &amp; Gynaecology), FMAS, DMAS, FIH</p>
+            <p className="text-xl text-gray-600 max-w-3xl mb-8">
+              Dedicated to providing high-quality women&apos;s healthcare, specializing in obstetrics
+              and gynaecology. Passionate about managing high-risk pregnancies, minimally invasive
+              surgery, and enhancing patient outcomes through compassionate care.
+            </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
             <a
               href="#contact"
               className="bg-[#1A5C5C] text-white px-8 py-4 rounded-full font-semibold hover:bg-[#134A4A] transition"
@@ -25,6 +42,7 @@ export default function Hero() {
             >
               Contact Clinic
             </a>
+            </div>
           </div>
         </div>
 

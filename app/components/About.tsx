@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
     <section id="about" className="py-20 px-4 bg-transparent">
@@ -15,26 +17,40 @@ export default function About() {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-justify">
               Dr. Shradha Vohra is an Obstetrician and Gynaecologist with extensive training in
               minimally invasive and robotic gynaecological surgery. She completed her MBBS from
               D.Y. Patil Medical College, Navi Mumbai and her M.S. in Obstetrics &amp; Gynaecology
               from D.Y. Patil Medical College, Kolhapur.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-justify">
               She holds fellowships in Minimal Access Surgery (FMAS), a Diploma in Minimal Access
               Surgery (DMAS), and a Fellowship in Operative and Diagnostic Hysteroscopy (FIH) from
               Medicity, Gurgaon. She is currently pursuing a Fellowship in Minimally Invasive
               Laparoscopic &amp; Robotic Gynaecological Surgery at Max Smart Hospital, New Delhi.
             </p>
-            <p className="text-gray-700 leading-relaxed">
+            <p className="text-gray-700 leading-relaxed text-justify">
               Her areas of expertise include high-risk pregnancy management, laparoscopic surgery,
               robotic gynaecological surgery, operative hysteroscopy, PCOS management, menopause
               care, and caesarean sections.
             </p>
           </div>
 
-          <div className="grid grid-cols-2 gap-6">
+          <div className="flex flex-col items-center gap-8">
+            <div className="rounded-2xl overflow-hidden shadow-xl border-2 border-[#1A5C5C]/20">
+              <Image
+                src="/about-photo.jpg"
+                alt="Dr. Shradha Vohra"
+                width={400}
+                height={500}
+                className="object-cover"
+              />
+            </div>
+          </div>
+        </div>
+
+        {/* Info Cards */}
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mt-12">
             <div className="bg-[#F7E0E4] p-6 rounded-xl">
               <h4 className="font-semibold text-[#1A5C5C] mb-2">Education</h4>
               <p className="text-gray-600">D.Y. Patil Medical College</p>
@@ -51,7 +67,6 @@ export default function About() {
               <h4 className="font-semibold text-[#1A5C5C] mb-2">Philosophy</h4>
               <p className="text-gray-600">Patient-Centered Care</p>
             </div>
-          </div>
         </div>
       </div>
     </section>

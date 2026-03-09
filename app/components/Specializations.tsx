@@ -79,7 +79,7 @@ export default function Specializations() {
                   hoveredIndex === index ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0'
                 }`}
               >
-                <p className="text-gray-600 leading-relaxed">{specialty.description}</p>
+                <p className="text-gray-600 leading-relaxed text-justify">{specialty.description}</p>
               </div>
               {hoveredIndex !== index && (
                 <p className="text-sm text-gray-500 italic">Hover to learn more</p>
