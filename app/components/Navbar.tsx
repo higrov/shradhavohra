@@ -19,7 +19,10 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 py-4 flex items-center justify-between">
         <a href="#" className="flex items-center gap-3">
           <Image src="/logo-2-nobg.png" alt="Aura Women's Health Clinic" width={80} height={80} className="object-contain" />
-          <span className="text-xl font-bold text-[#1A5C5C]">Dr. Shradha Vohra</span>
+          <div className="flex flex-col">
+            <span className="text-xl font-bold text-[#1A5C5C]">Dr. Shradha Vohra</span>
+            <span className="text-xs text-[#1A5C5C]/70">M.B.B.S, M.S. (OBGYN), FMAS, DMAS, FIH</span>
+          </div>
         </a>
 
         {/* Desktop Nav */}

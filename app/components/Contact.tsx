@@ -32,18 +32,6 @@ export default function Contact() {
           {/* Contact Info */}
           <div className="space-y-8">
             <div className="bg-[#F9C7D4] p-6 rounded-xl shadow-md">
-              <h3 className="text-lg font-bold text-[#1A5C5C] mb-2">Clinic Address</h3>
-              <p className="text-gray-600">Max Smart Hospital</p>
-              <p className="text-gray-600">Saket, New Delhi</p>
-            </div>
-
-            <div className="bg-[#F9C7D4] p-6 rounded-xl shadow-md">
-              <h3 className="text-lg font-bold text-[#1A5C5C] mb-2">Office Hours</h3>
-              <p className="text-gray-600">Monday - Saturday: 9:00 AM - 5:00 PM</p>
-              <p className="text-gray-600">Sunday: Closed</p>
-            </div>
-
-            <div className="bg-[#F9C7D4] p-6 rounded-xl shadow-md">
               <h3 className="text-lg font-bold text-[#1A5C5C] mb-2">Phone</h3>
               <a href="tel:+919967460404" className="text-[#1A5C5C] hover:underline">
                 +91 99674 60404

@@ -27,7 +27,7 @@ export default function About() {
               She holds fellowships in Minimal Access Surgery (FMAS), a Diploma in Minimal Access
               Surgery (DMAS), and a Fellowship in Operative and Diagnostic Hysteroscopy (FIH) from
               Medicity, Gurgaon. She is currently pursuing a Fellowship in Minimally Invasive
-              Laparoscopic &amp; Robotic Gynaecological Surgery at Max Smart Hospital, New Delhi.
+              Laparoscopic &amp; Robotic Gynaecological Surgery in New Delhi.
             </p>
             <p className="text-gray-700 leading-relaxed text-justify">
               Her areas of expertise include high-risk pregnancy management, laparoscopic surgery,

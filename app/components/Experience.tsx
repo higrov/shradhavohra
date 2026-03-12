@@ -4,7 +4,7 @@ export default function Experience() {
       title: 'Fellowship - Minimally Invasive Laparoscopic & Robotic Surgery',
       place: 'Max Smart Hospital, Saket, New Delhi',
       period: 'Dec 2025 - Present',
-      description: 'Advanced fellowship in minimally invasive laparoscopic and robotic gynaecological surgery under Dr. Usha M. Kumar.',
+      description: 'Advanced fellowship in minimally invasive laparoscopic and robotic gynaecological surgery.',
     },
     {
       title: 'Fellowships (FMAS, DMAS, FIH)',
@@ -25,10 +25,10 @@ export default function Experience() {
       description: 'Postgraduate training in obstetrics and gynaecology with research in maternal-fetal complications and placental morphology.',
     },
     {
-      title: 'Internship',
-      place: 'D.Y. Patil Hospital, Navi Mumbai',
-      period: 'Feb 2018 - Feb 2019',
-      description: 'Rotations across Community Medicine, Obstetrics & Gynaecology, General Medicine, General Surgery, Paediatrics, Orthopaedics, Psychiatry, Anaesthesia, and more.',
+      title: 'M.B.B.S.',
+      place: 'D.Y. Patil Medical College, Navi Mumbai',
+      period: 'July 2013 - Feb 2019',
+      description: 'Bachelor of Medicine and Bachelor of Surgery. Internship at D.Y. Patil Hospital (Feb 2018 - Feb 2019) with rotations across Obstetrics & Gynaecology, General Medicine, General Surgery, Paediatrics, Community Medicine, Orthopaedics, Psychiatry, Anaesthesia, and more.',
     },
   ];
 

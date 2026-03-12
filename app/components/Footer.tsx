@@ -4,7 +4,8 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           <div>
-            <h3 className="text-2xl font-bold text-white mb-4">Dr. Shradha Vohra</h3>
+            <h3 className="text-2xl font-bold text-white mb-1">Dr. Shradha Vohra</h3>
+            <p className="text-white/70 text-sm mb-4">M.B.B.S, M.S. (OBGYN), FMAS, DMAS, FIH</p>
             <p className="text-white">
               Obstetrician & Gynaecologist specializing in minimally invasive surgery and women&apos;s health.
             </p>
@@ -21,8 +22,6 @@ export default function Footer() {
           </div>
           <div>
             <h4 className="font-semibold mb-4">Contact</h4>
-            <p className="text-white mb-2">Max Smart Hospital</p>
-            <p className="text-white mb-2">Saket, New Delhi</p>
             <p className="text-white mb-2">Phone: +91 99674 60404</p>
             <p className="text-white">Email: shradha.vohra@gmail.com</p>
           </div>

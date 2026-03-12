@@ -7,7 +7,7 @@ export default function WhyChoose() {
         </svg>
       ),
       title: 'Specialized Training',
-      description: 'Trained at premier institutions including D.Y. Patil Medical College, Medicity Gurgaon, and Max Smart Hospital with multiple fellowships in minimally invasive surgery.',
+      description: 'Trained at premier institutions including D.Y. Patil Medical College and Medicity Gurgaon with multiple fellowships in minimally invasive surgery.',
     },
     {
       icon: (
