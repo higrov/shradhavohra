@@ -41,8 +41,8 @@ export default function About() {
               <Image
                 src="/about-photo.jpg"
                 alt="Dr. Shradha Vohra"
-                width={400}
-                height={500}
+                width={360}
+                height={640}
                 className="object-cover"
               />
             </div>
