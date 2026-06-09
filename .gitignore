@@ -39,3 +39,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Local-only: tooling, memory, personal source docs (keep out of public repo)
+.claude/
+CLAUDE.md
+doctor-website.md
+Shradha CV*.pdf

@@ -3,8 +3,8 @@ export default function Experience() {
     {
       title: 'Fellowship - Minimally Invasive Laparoscopic & Robotic Surgery',
       place: 'Max Smart Hospital, Saket, New Delhi',
-      period: 'Dec 2025 - Present',
-      description: 'Advanced fellowship in minimally invasive laparoscopic and robotic gynaecological surgery.',
+      period: 'Dec 2025 - June 2026',
+      description: 'Advanced fellowship in minimally invasive laparoscopic and robotic gynaecological surgery. Intuitive-certified Console Surgeon on the DaVinci Surgical System.',
     },
     {
       title: 'Fellowships (FMAS, DMAS, FIH)',
@@ -37,6 +37,7 @@ export default function Experience() {
     { title: 'M.S. (OB/GYN)', institution: 'D.Y. Patil Medical College, Kolhapur' },
     { title: 'FMAS & DMAS', institution: 'Medicity, Gurgaon' },
     { title: 'FIH', institution: 'Operative & Diagnostic Hysteroscopy' },
+    { title: 'Robotic Console Surgeon', institution: 'DaVinci Surgical System (Intuitive)' },
   ];
 
   return (
@@ -80,7 +81,7 @@ export default function Experience() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6">
           {certifications.map((cert, index) => (
             <div key={index} className="bg-[#F7E0E4] p-6 rounded-xl text-center">
               <div className="w-12 h-12 bg-[#1A5C5C] rounded-full flex items-center justify-center mx-auto mb-4">
