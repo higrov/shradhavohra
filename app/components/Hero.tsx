@@ -23,7 +23,7 @@ export default function Hero() {
             <h1 className="text-5xl md:text-6xl font-bold text-[#1A5C5C] mb-6">
               Dr. Shradha Vohra
             </h1>
-            <p className="text-lg text-gray-500 mb-4">M.B.B.S, M.S. (Obstetrics &amp; Gynaecology), FMAS, DMAS, FIH</p>
+            <p className="text-lg text-gray-500 mb-4">M.B.B.S, M.S. (Obstetrics &amp; Gynaecology), FMAS, DMAS, FIH, Gynaecological Robotic Surgery</p>
             <p className="text-xl text-gray-600 max-w-3xl mb-8">
               Dedicated to providing high-quality women&apos;s healthcare, specializing in obstetrics
               and gynaecology. Passionate about managing high-risk pregnancies, minimally invasive

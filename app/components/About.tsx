@@ -37,7 +37,7 @@ export default function About() {
           </div>
 
           <div className="flex flex-col items-center gap-8">
-            <div className="rounded-2xl overflow-hidden shadow-xl border-2 border-[#1A5C5C]/20">
+            <div className="rounded-2xl overflow-hidden shadow-xl border-4 border-[#1A5C5C]">
               <Image
                 src="/about-photo.jpg"
                 alt="Dr. Shradha Vohra"

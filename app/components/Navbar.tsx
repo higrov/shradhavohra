@@ -21,7 +21,7 @@ export default function Navbar() {
           <Image src="/logo-2-nobg.png" alt="Aura Women's Health Clinic" width={80} height={80} className="object-contain" />
           <div className="flex flex-col">
             <span className="text-xl font-bold text-[#1A5C5C]">Dr. Shradha Vohra</span>
-            <span className="text-xs text-[#1A5C5C]/70">M.B.B.S, M.S. (OBGYN), FMAS, DMAS, FIH</span>
+            <span className="text-xs text-[#1A5C5C]/70">M.B.B.S, M.S. (OBGYN), FMAS, DMAS, FIH, Gynae Robotic Surgery</span>
           </div>
         </a>
 
