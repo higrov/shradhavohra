@@ -40,7 +40,7 @@ export default function Hero() {
               href="#contact"
               className="border-2 border-[#1A5C5C] text-[#1A5C5C] px-8 py-4 rounded-full font-semibold hover:bg-[#2A7B7B]/20 transition"
             >
-              Contact Clinic
+              Contact
             </a>
             </div>
           </div>
