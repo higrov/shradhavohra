@@ -17,7 +17,7 @@ export default function Contact() {
     setStatus('sending');
     try {
       const body = new FormData();
-      body.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? '');
+      body.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS ?? '');
       body.append('subject', 'New inquiry from shradhavohra website');
       body.append('from_name', formData.name);
       Object.entries(formData).forEach(([key, value]) => body.append(key, value));
