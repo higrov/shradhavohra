@@ -10,11 +10,31 @@ export default function Contact() {
     message: '',
   });
 
-  const handleSubmit = (e: FormEvent) => {
+  const [status, setStatus] = useState<'idle' | 'sending' | 'success' | 'error'>('idle');
+
+  const handleSubmit = async (e: FormEvent) => {
     e.preventDefault();
-    // TODO: Integrate with email service or backend
-    alert('Thank you for your message! We will get back to you soon.');
-    setFormData({ name: '', email: '', phone: '', message: '' });
+    setStatus('sending');
+    try {
+      const body = new FormData();
+      body.append('access_key', process.env.NEXT_PUBLIC_WEB3FORMS_KEY ?? '');
+      body.append('subject', 'New inquiry from shradhavohra website');
+      body.append('from_name', formData.name);
+      Object.entries(formData).forEach(([key, value]) => body.append(key, value));
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        body,
+      });
+      const data = await res.json();
+      if (data.success) {
+        setStatus('success');
+        setFormData({ name: '', email: '', phone: '', message: '' });
+      } else {
+        setStatus('error');
+      }
+    } catch {
+      setStatus('error');
+    }
   };
 
   return (
@@ -41,8 +61,8 @@ export default function Contact() {
 
             <div className="bg-[#F9C7D4] p-6 rounded-xl shadow-md">
               <h3 className="text-lg font-bold text-[#1A5C5C] mb-2">Email</h3>
-              <a href="mailto:shradha.vohra@gmail.com" className="text-[#1A5C5C] hover:underline">
-                shradha.vohra@gmail.com
+              <a href="mailto:drshradhavohra@gmail.com" className="text-[#1A5C5C] hover:underline">
+                drshradhavohra@gmail.com
               </a>
               <p className="text-gray-500 text-sm">We&apos;ll respond within 24 hours</p>
             </div>
@@ -104,10 +124,21 @@ export default function Contact() {
               </div>
               <button
                 type="submit"
-                className="w-full bg-[#1A5C5C] text-white py-4 rounded-lg font-semibold hover:bg-[#134A4A] transition"
+                disabled={status === 'sending'}
+                className="w-full bg-[#1A5C5C] text-white py-4 rounded-lg font-semibold hover:bg-[#134A4A] transition disabled:opacity-60 disabled:cursor-not-allowed"
               >
-                Send Message
+                {status === 'sending' ? 'Sending...' : 'Send Message'}
               </button>
+              {status === 'success' && (
+                <p className="text-sm text-[#1A5C5C] font-semibold text-center">
+                  Thank you for your message! We will get back to you soon.
+                </p>
+              )}
+              {status === 'error' && (
+                <p className="text-sm text-red-600 font-semibold text-center">
+                  Something went wrong. Please try again or email us directly.
+                </p>
+              )}
               <p className="text-sm text-gray-500 text-center">
                 This form is for general inquiries. For medical emergencies, please call 108.
               </p>
